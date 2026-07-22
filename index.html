@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Modern Stopwatch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient animated background -->
+  <div class="bg-layer" aria-hidden="true">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="blob blob-c"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Live digital clock, top corner -->
+  <div class="live-clock" id="liveClock" aria-label="Current time">--:--:--</div>
+
+  <main class="page">
+    <section class="card" id="stopwatchCard">
+
+      <!-- Header -->
+      <header class="card-header">
+        <div class="logo-wrap">
+          <div class="logo-ring" id="logoRing">
+            <svg class="logo-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="13" r="8.25" stroke="url(#logoGrad)" stroke-width="1.6"/>
+              <path d="M12 8.5V13L14.8 15" stroke="url(#logoGrad)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9.5 2.5H14.5" stroke="url(#logoGrad)" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M12 2.5V4.2" stroke="url(#logoGrad)" stroke-width="1.6" stroke-linecap="round"/>
+              <defs>
+                <linearGradient id="logoGrad" x1="4" y1="4" x2="20" y2="21" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#3B82F6"/>
+                  <stop offset="1" stop-color="#06B6D4"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <h1 class="title">Modern Stopwatch</h1>
+        <p class="subtitle">Precision timing, beautifully simple</p>
+      </header>
+
+      <!-- Status row -->
+      <div class="status-row">
+        <div class="status-pill" id="statusPill">
+          <span class="status-dot" id="statusDot"></span>
+          <span id="statusText">Stopped</span>
+        </div>
+        <div class="laps-count">
+          <span id="lapCount">0</span>
+          <span class="laps-count-label">Laps</span>
+        </div>
+      </div>
+
+      <!-- Timer display -->
+      <div class="timer-display" id="timerDisplay">
+        <div class="timer-digits">
+          <span class="digit-group" id="hoursDisplay">00</span>
+          <span class="colon">:</span>
+          <span class="digit-group" id="minutesDisplay">00</span>
+          <span class="colon">:</span>
+          <span class="digit-group" id="secondsDisplay">00</span>
+          <span class="colon colon-ms">:</span>
+          <span class="digit-group ms-group" id="msDisplay">00</span>
+        </div>
+        <div class="timer-labels">
+          <span>Hours</span><span>Minutes</span><span>Seconds</span><span>MS</span>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls">
+        <button class="btn btn-start" id="startBtn" title="Start (Space)">
+          <span class="btn-icon">▶</span><span class="btn-label">Start</span>
+        </button>
+        <button class="btn btn-pause" id="pauseBtn" title="Pause (Space)" disabled>
+          <span class="btn-icon">⏸</span><span class="btn-label">Pause</span>
+        </button>
+        <button class="btn btn-lap" id="lapBtn" title="Lap (L)" disabled>
+          <span class="btn-icon">🏁</span><span class="btn-label">Lap</span>
+        </button>
+        <button class="btn btn-reset" id="resetBtn" title="Reset (R)">
+          <span class="btn-icon">↺</span><span class="btn-label">Reset</span>
+        </button>
+      </div>
+
+      <!-- Lap history -->
+      <div class="lap-section">
+        <div class="lap-section-header">
+          <span>Lap History</span>
+          <span class="lap-hint">Newest first</span>
+        </div>
+        <ul class="lap-list" id="lapList">
+          <li class="lap-empty" id="lapEmpty">No laps recorded yet</li>
+        </ul>
+      </div>
+
+      <!-- Keyboard hint -->
+      <div class="kbd-hint">
+        <span><kbd>Space</kbd> Start / Pause</span>
+        <span><kbd>L</kbd> Lap</span>
+        <span><kbd>R</kbd> Reset</span>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

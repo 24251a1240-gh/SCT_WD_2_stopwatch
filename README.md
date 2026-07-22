@@ -52,7 +52,8 @@ SCT_WD_2/
 
 Preview
 
-<img width="737" height="339" alt="image" src="https://github.com/user-attachments/assets/08356a61-d443-46a0-998a-3288fade12b9" />
+<img width="347" height="479" alt="stopwatch" src="https://github.com/user-attachments/assets/4a69573e-010f-4001-9528-a9b88280e59e" />
+
 
  💡 Learning Outcomes
 

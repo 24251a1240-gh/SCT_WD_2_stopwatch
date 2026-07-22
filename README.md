@@ -1,4 +1,4 @@
-<img width="347" height="479" alt="image" src="https://github.com/user-attachments/assets/8135dd88-832d-405a-8c1e-8422c008995c" />⏱️ Modern Stopwatch Web Application
+⏱️ Modern Stopwatch Web Application
 
 A modern, responsive, and interactive Stopwatch Web Application developed using HTML, CSS, and JavaScript as part of "SkillCraft Technology Internship - Task 02."
 
@@ -50,6 +50,9 @@ SCT_WD_2/
 | R | Reset Stopwatch |
 
 
+Preview
+
+<img width="737" height="339" alt="image" src="https://github.com/user-attachments/assets/08356a61-d443-46a0-998a-3288fade12b9" />
 
  💡 Learning Outcomes
 
@@ -65,9 +68,9 @@ This project helped me improve my understanding of:
 
  🎯 Internship Task
 
-**SkillCraft Technology Internship**
+SkillCraft Technology Internship
 
-**Task 02 - Stopwatch Web Application**
+Task 02 - Stopwatch Web Application
 
 Developed a responsive stopwatch application with start, pause, reset, and lap functionalities using HTML, CSS, and JavaScript.
 

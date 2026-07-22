@@ -1,4 +1,4 @@
-⏱️ Modern Stopwatch Web Application
+<img width="347" height="479" alt="image" src="https://github.com/user-attachments/assets/8135dd88-832d-405a-8c1e-8422c008995c" />⏱️ Modern Stopwatch Web Application
 
 A modern, responsive, and interactive Stopwatch Web Application developed using HTML, CSS, and JavaScript as part of "SkillCraft Technology Internship - Task 02."
 
@@ -48,16 +48,6 @@ SCT_WD_2/
 | Space | Start / Pause |
 | L | Record Lap |
 | R | Reset Stopwatch |
-
-
-
- 📸 Preview
-
-
-
-
-
-
 
 
 
